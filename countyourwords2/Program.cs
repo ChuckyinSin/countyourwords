@@ -1,11 +1,12 @@
 ﻿using System;
 
-class Program
+public class Program
 {
-    static void Main() {
+    public static void Main() {
         string filePath = "input.txt";
         string[] input = readFile(filePath);
         sortWords(input, 0, input.Length-1);
+        Console.WriteLine(input);
         List<Pair<int, string>> pairs = pairWords(input);
         printPairs(pairs);
     }
